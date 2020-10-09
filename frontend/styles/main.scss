@@ -1,0 +1,2916 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+// css style
+
+body {
+  font-family: 'Assistant', Arial, sans-serif;
+
+}
+
+main {
+  max-width: 1280px;
+  margin: auto auto;
+  z-index: 1;
+}
+
+header {
+  max-width: 1280px;
+  margin: auto auto;
+  z-index: 1;
+}
+
+footer {
+  max-width: 1280px;
+  margin: auto auto;
+}
+
+//navbar
+.navbar-brand {
+  display: flex;
+  align-items: center;
+
+  img {
+    max-height: 40px;
+  }
+}
+
+.btn-login {
+  background-color: #00004d;
+  color: #ffffff;
+
+  &:hover {
+    background-color: #15247c;
+    color: #ffffff;
+  }
+}
+
+.btn-navbar-right {
+  margin-top: -10px !important;
+  margin-bottom: -8px !important;
+
+  height: 70px;
+  border-radius: 0px;
+}
+
+.navbar-light {
+  position: fixed;
+  z-index: 10;
+  top: 0%;
+  width: 100%;
+  margin: unset;
+  padding-right: unset;
+
+  .navbar-nav {
+    .nav-link {
+      color: #fff !important;
+      font-weight: lighter;
+
+      &.active {
+        font-weight: bold;
+        color: #fff !important;
+      }
+
+      &:hover {
+        color: #fff !important;
+        border-bottom: 2px solid #fff;
+      }
+    }
+
+
+    .btn-outline-light {
+      &:hover {
+        color: #f9ca24;
+        border-bottom: 0px solid;
+      }
+
+    }
+  }
+
+}
+
+.btn-cari {
+  background-color: #f37121;
+  color: white;
+
+  &:hover {
+    background-color: #f38d4d;
+    color: white;
+  }
+}
+
+//header
+header {
+  padding: 180px 0px 100px;
+  color: #00004d;
+  margin-top: -70px;
+  // background-color: #feca57;
+  // background-image: linear-gradient(45deg, #ffbd69 30%, #f37121);
+  /* url("../img/group 4.png"); */
+  background-size: cover;
+
+  p {
+    font-family: "", serif;
+  }
+}
+
+
+
+@media screen and (min-width:250px) {
+
+
+  .img-kelebihan {
+
+
+    animation-name: namakos;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    max-height: 40px;
+    max-width: 40px;
+  }
+
+
+  .txt-kelebihan {
+
+    font-size: 12px;
+    color: #00004d;
+  }
+
+  //popular 
+  .section-popular-text {
+    font-family: "Playfair Display",
+      sans-serif;
+    padding-top: 40px;
+    font-weight: bold;
+    font-size: 40px;
+    padding-bottom: 40px;
+  }
+
+
+  .popular-content {
+
+
+
+    .section-popular-content {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      overflow: hidden;
+
+      .card-kos {
+        height: 80px;
+        width: 150px;
+        color: white;
+        padding: 30px;
+        background-size: cover;
+        margin: 10px;
+        border-radius: 20px;
+
+
+
+        .place-name {
+          font-size: 18px;
+          color: white;
+        }
+
+        .btn-kos-details {
+          font-size: 12px;
+          opacity: 0%;
+        }
+
+        .kos-button {
+          opacity: 0%;
+          display: flex;
+          justify-content: center;
+          margin-top: 100%;
+          align-content: end;
+          background-color: #ffbb00;
+          border-radius: 10px;
+          transition: 0.3s;
+
+          &:hover {
+            transform: scale(1.1);
+            background-color: #ffcc00;
+          }
+        }
+      }
+    }
+  }
+
+  @keyframes namakos {
+    0% {
+      opacity: 0%;
+      margin-top: 90%;
+    }
+
+    100% {
+      opacity: 100%;
+      margin-top: unset;
+    }
+  }
+
+  /* card list css start */
+  .container-card-list {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    flex-wrap: wrap;
+
+    .card-content {
+      border-radius: 10px;
+      padding: 5px;
+      margin: 5px;
+      max-width: 150px;
+      height: 180px;
+      background-color: white;
+      overflow: hidden;
+
+      .card-img {
+        border-radius: 10px 10px 10px 10px;
+        width: 140px;
+        height: 100px;
+        background-size: 160px 100px;
+        overflow: hidden;
+        background-image: cover;
+        box-sizing: border-box;
+      }
+
+      .card-content-header {
+        display: flex;
+        padding-bottom: 0px;
+        justify-content: space-between;
+        flex-flow: row;
+
+        .card-content-name {
+          font-weight: bold;
+          padding-top: 5px;
+          font-size: 12px;
+        }
+
+        .btn-kind-putra {
+          margin-top: -100px;
+          width: 50px;
+          border-radius: 5px;
+          font-size: 10px;
+          font-weight: bold;
+          color: rgb(0, 43, 122);
+          text-align: center;
+          background-color: rgb(108, 159, 253);
+          margin-bottom: auto;
+          margin-top: 5px;
+        }
+
+        .btn-kind-putri {
+          width: 50px;
+          border-radius: 5px;
+          font-size: 10px;
+          font-weight: bold;
+          color: rgb(112, 0, 122);
+          text-align: center;
+          background-color: rgb(253, 108, 241);
+          margin-bottom: auto;
+          margin-top: 5px;
+        }
+
+        .btn-kind-campur {
+          margin-top: 5px;
+          width: 50px;
+          border-radius: 5px;
+          font-size: 10px;
+          font-weight: bold;
+          color: rgb(4, 122, 0);
+          text-align: center;
+          background-color: rgb(120, 253, 108);
+          margin-bottom: auto;
+        }
+      }
+
+      .card-content-location {
+        font-weight: bold;
+        font-size: 10px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        margin-bottom: 10%;
+      }
+
+      .card-content-fasility {
+        font-size: 10px;
+        justify-items: flex-start;
+        font-style: italic;
+        font-size: lighter;
+      }
+
+      .card-content-footer {
+        padding-right: 10px;
+
+        .card-content-price {
+          font-weight: bold;
+          font-size: 10px;
+          display: flex;
+          justify-content: flex-end;
+          padding-bottom: 5px;
+          margin-top: -7%;
+          margin-bottom: 10px;
+        }
+
+        .card-content-latest {
+          font-size: 10px;
+          margin-top: -5px;
+          font-weight: lighter;
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+
+      &:hover {
+        box-shadow: 0px 0px 1px grey;
+        border: grey;
+
+      }
+    }
+  }
+
+  /* card list css end */
+  /* review list start */
+  .background-review {
+    padding: 20px 0px 20px;
+    background-image: url("../img/review.png");
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .review-tittle {
+    font-size: small;
+    padding-left: 5%;
+    color: white;
+  }
+
+  .container-review {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+
+  .review-content {
+    max-width: 150px;
+    max-height: 300px;
+    background-color: #ffffff;
+    margin: 5px;
+    border-radius: 10px;
+  }
+
+  div.review-content .user-review-image {
+    max-width: 40px;
+    max-height: 40px;
+    border-radius: 50px 50px 50px 50px;
+    background-color: black;
+    overflow: hidden;
+    margin: 10px;
+  }
+
+  div.review-content .user-review-image .user-review {
+    max-width: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    max-height: 40px;
+  }
+
+
+  .review-username .name-reviewer {
+    h5 {
+      font-weight: bold;
+      font-family: "assistant", Helvetica, sans-serif;
+      font-size: 11px;
+    }
+
+    p {
+      font-size: 10px;
+      font-weight: 300;
+      font-family: "Montserrat", Arial, sans-serif;
+    }
+  }
+
+  .review-item {
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 10px;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+
+  .review-item .review {
+    padding: 18px;
+    padding-bottom: 20px;
+  }
+
+  .lebih-banyak {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .lebih-banyak2 {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .lihat-semua {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+    margin-right: 50px;
+    font-size: 15px;
+  }
+
+  .area-populer-tittle {
+    padding-left: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .area-populer-content {
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-size: cover;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 10px auto;
+    flex-wrap: wrap;
+  }
+
+  .area-populer-img {
+    display: flex;
+    background-color: white;
+    width: 120px;
+    height: 100px;
+    margin: auto 5px;
+    background-size: 120px 100px;
+    overflow: hidden;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 10px;
+    margin-bottom: 20px;
+
+
+    &:hover {
+      transform: scale(1.1);
+      transition: 0.3s;
+      box-shadow: 1px 1px 5px black;
+
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+  }
+
+  .footer-logo {
+    width: 70px;
+  }
+
+  .img-footer {
+    width: 70px;
+  }
+
+  .footer .footer-tittle {
+    font-size: 10px;
+  }
+
+  .footer-item {
+    font-size: 8px;
+    font-weight: lighter;
+  }
+
+  // halaman pencarian
+  .pencarian {
+    display: flex;
+    justify-content: space-between;
+    position: fixed center;
+    z-index: 10;
+    padding: auto;
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0px 0px 1px grey;
+
+    .btn-kategori {
+      padding: unset;
+    }
+  }
+
+  .content-pencarian {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  .pagination {
+    justify-content: center;
+    margin-top: -30px;
+    margin-bottom: 20px;
+
+    .page-item {
+      color: grey;
+    }
+  }
+
+  // login css
+  .login-page {
+    display: flex;
+    justify-content: center;
+
+
+
+
+    .login-tittle {
+      margin-top: 30px;
+      text-align: center;
+
+    }
+
+    .login-login {
+      display: flex;
+    }
+
+    .login-form {
+      background-color: #f8f8f8;
+      padding: 50px;
+      margin-top: 20px;
+      font-size: 10px;
+
+      .form-group {
+        text-align: left;
+      }
+
+      .form-check-input {
+        padding: unset;
+        margin-top: unset;
+        width: 10px;
+      }
+    }
+
+
+    .beekost-login-tittle {
+      display: flex;
+      justify-content: center;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    .btn-login-mobile {
+      background-color: #00004d;
+      color: #ffffff;
+      width: 100%;
+      font-size: 10px;
+
+
+      &:hover {
+        background-color: #15247c;
+        color: #ffffff;
+      }
+    }
+  }
+
+  .daftar-beekost {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+
+  }
+}
+
+
+
+.section-details-header {
+  min-height: 380px;
+  background-color: #e4e6eb;
+  margin-top: -60px;
+  width: 100%;
+}
+
+.section-details-content {
+  margin-top: -210px;
+  min-height: 100vh;
+  box-sizing: border-box;
+
+  h5 {
+    font-family: 'Montserrat';
+  }
+
+  .breadcrumb {
+    color: #00004d;
+    background-color: transparent;
+    padding: 0%;
+    margin-bottom: 30px;
+  }
+
+  .breadcrumb-item {
+    &.active {
+      font-weight: bold;
+      color: #00004d;
+    }
+  }
+
+}
+
+.img-user {
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.pemilik-kos {
+
+  display: flex;
+  align-items: center;
+}
+
+.lokasi-kos {
+  width: 100%;
+  min-height: 300px;
+  padding-bottom: 20px;
+}
+
+.review-kos {
+  margin-bottom: 20px;
+
+  .review-item {
+    text-align: left;
+    font-size: 15px;
+
+  }
+}
+
+.btn-kind-putra {
+  width: 50px;
+  border-radius: 5px;
+  font-size: 10 px;
+  font-weight: bold;
+  color: rgb(0, 43, 122);
+  text-align: center;
+  background-color: rgb(108, 159, 253);
+  margin-bottom: auto;
+  margin-top: 5px;
+  margin-bottom: auto;
+
+}
+
+.btn-kind-putri {
+  width: 50px;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: bold;
+  color: rgb(112, 0, 122);
+  text-align: center;
+  background-color: rgb(253, 108, 241);
+  margin-bottom: auto;
+  margin-top: 5px;
+}
+
+.btn-kind-campur {
+  margin-top: 5px;
+  width: 50px;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: bold;
+  color: rgb(4, 122, 0);
+  text-align: center;
+  background-color: rgb(120, 253, 108);
+  margin-bottom: auto;
+}
+
+.deskripsi-kos {
+  padding-top: 20px;
+  padding-left: 20px;
+  border-radius: 10px;
+  line-height: 1.5;
+
+  .fasilitas-kos {
+    padding-left: 30px;
+
+
+    .fasilitas-item {
+      padding-bottom: 20px;
+      margin-left: unset;
+      padding-left: unset;
+      font-weight: 500;
+      font-size: 15px;
+    }
+  }
+
+  .btn-detail-kos {
+    background-color: #ffbb00;
+    color: #ffffff;
+    justify-content: center;
+    width: 100%;
+    margin-left: -10px;
+    margin-bottom: 20px;
+
+    &:hover {
+      background-color: #ffcc00;
+      color: #ffffff;
+    }
+
+  }
+
+}
+
+.harga-kos {
+  padding-top: 20px;
+  padding-left: 20px;
+  line-height: 1.5;
+  border-radius: 10px;
+
+  .btn-detail-kos {
+    background-color: #ffdd00;
+    color: #ffffff;
+    justify-content: center;
+    width: 100%;
+    margin-left: -10px;
+    margin-bottom: 20px;
+
+    &:hover {
+      background-color: #ffcc00;
+      color: #ffffff;
+    }
+
+  }
+
+  .btn-kamar {
+    background-color: #e4e6eb;
+    font-size: 15px;
+  }
+
+  .latest-update-detail {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+
+
+
+}
+
+.btn-detail-review {
+  background-color: #00004d;
+  font-size: 13px;
+  color: #fff;
+
+  &:hover {
+    background-color: #06068f;
+  }
+}
+
+.btn-detail-hubungi {
+  font-size: 13px;
+  background-color: #ffbb00;
+  color: #fff;
+
+  &:hover {
+    background-color: #ffcc00;
+  }
+}
+
+.card-details {
+  box-sizing: border-box;
+  border-radius: 10px;
+
+  .gallery {
+
+    .xzoom-container {
+      display: block;
+      text-align: center;
+      margin-top: 15px;
+
+      .xzoom {
+        width: 90%;
+        height: 250px;
+        box-shadow: none;
+        margin-bottom: 10px;
+
+      }
+
+      .xzoom-gallery {
+        width: 40px;
+        height: 30px;
+
+      }
+
+      .xactive {
+        border: 4px solid;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+/* review list end */
+
+
+.cr {
+  font-family: 'Assistant', Courier, monospace;
+  font-weight: 300;
+  display: flex;
+  font-size: 12px;
+  justify-content: center;
+  color: #5f5f5f;
+  padding: 10px;
+}
+
+.hubungi-pemilik {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.btn-filter-kos {
+  transition-duration: 1s;
+  background-color: #f37121;
+  width: 100%;
+}
+
+.btn-cari-filter {
+  background-color: #00004d;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 350px) {
+  .section-popular-text {
+    font-family: "Playfair Display", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+  }
+
+  .popular-content {
+
+
+    .section-popular-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+
+      .card-kos {
+        min-width: 170px;
+        max-width: 200px;
+        height: 80px;
+        color: white;
+        padding: 20px;
+        background-size: cover;
+        margin-bottom: 20px;
+        border-radius: 20px;
+
+        .place-name {
+          font-size: 20px;
+          color: white;
+        }
+
+        .btn-kos-details {
+          font-size: 12px;
+        }
+
+        .kos-button {
+          margin-top: 80%;
+          background-color: #ffbb00;
+          border-radius: 10px;
+          transition: 0.3s;
+
+          &:hover {
+            transform: scale(1.1);
+            background-color: #ffcc00;
+          }
+        }
+      }
+    }
+  }
+
+  @keyframes namakos {
+    0% {
+      opacity: 0%;
+      margin-top: 90%;
+    }
+
+    100% {
+      opacity: 100%;
+      margin-top: unset;
+    }
+  }
+
+  /* card list css start */
+  .container-card-list {
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    flex-wrap: wrap;
+
+    .card-content {
+      border-radius: 10px;
+      padding: 5px;
+      margin: 5px;
+      max-width: 150px;
+      height: 180px;
+      background-color: white;
+      overflow: hidden;
+      box-shadow: unset;
+
+      .card-img {
+        border-radius: 10px 10px 10px 10px;
+        width: 140px;
+        height: 100px;
+        background-size: 160px 100px;
+        overflow: hidden;
+        background-image: cover;
+        box-sizing: border-box;
+      }
+
+      .card-content-header {
+        display: flex;
+        padding-bottom: 0px;
+        justify-content: space-between;
+        flex-flow: row;
+
+        .card-content-name {
+          font-weight: bold;
+          padding-top: 5px;
+          font-size: 12px;
+        }
+
+        .btn-kind-putra {
+          margin-top: -100px;
+          width: 50px;
+          border-radius: 5px;
+          font-size: 10px;
+          font-weight: bold;
+          color: rgb(0, 43, 122);
+          text-align: center;
+          background-color: rgb(108, 159, 253);
+          margin-bottom: auto;
+          margin-top: 5px;
+        }
+
+        .btn-kind-putri {
+          width: 50px;
+          border-radius: 5px;
+          font-size: 10px;
+          font-weight: bold;
+          color: rgb(112, 0, 122);
+          text-align: center;
+          background-color: rgb(253, 108, 241);
+          margin-bottom: auto;
+          margin-top: 5px;
+        }
+
+        .btn-kind-campur {
+          margin-top: 5px;
+          width: 50px;
+          border-radius: 5px;
+          font-size: 10px;
+          font-weight: bold;
+          color: rgb(4, 122, 0);
+          text-align: center;
+          background-color: rgb(120, 253, 108);
+          margin-bottom: auto;
+        }
+      }
+
+      .card-content-location {
+        font-size: 10px;
+        font-weight: bold;
+        font-size: 10px;
+        margin-bottom: 10%;
+      }
+
+      .card-content-fasility {
+        font-size: 10px;
+        justify-items: flex-start;
+        font-style: italic;
+        font-size: lighter;
+      }
+
+      .card-content-footer {
+        padding-right: 10px;
+
+        .card-content-price {
+          font-weight: bold;
+          font-size: 10px;
+          display: flex;
+          justify-content: flex-end;
+          padding-bottom: 5px;
+          margin-top: -8%;
+        }
+
+        .card-content-latest {
+          margin-top: 2px;
+          font-size: 10px;
+          font-weight: lighter;
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+
+      &:hover {
+        box-shadow: 0px 0px 1px grey;
+        border: grey;
+
+      }
+    }
+  }
+
+  /* card list css end */
+  /* review list start */
+  .background-review {
+    padding: 20px 0px 20px;
+    background-image: url("../img/review.png");
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .review-tittle {
+    font-size: small;
+    padding-left: 5%;
+    color: white;
+  }
+
+  .container-review {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+
+  .review-content {
+    max-width: 150px;
+    max-height: 300px;
+    background-color: #ffffff;
+    margin: 5px;
+    border-radius: 10px;
+  }
+
+  div.review-content .user-review-image {
+    max-width: 40px;
+    max-height: 40px;
+    border-radius: 50px 50px 50px 50px;
+    background-color: black;
+    overflow: hidden;
+    margin: 10px;
+  }
+
+  div.review-content .user-review-image .user-review {
+    max-width: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    max-height: 40px;
+  }
+
+
+  .review-username .name-reviewer {
+    h5 {
+      font-weight: bold;
+      font-family: "assistant", Helvetica, sans-serif;
+      font-size: 11px;
+    }
+
+    p {
+      font-size: 10px;
+      font-weight: 300;
+      font-family: "Montserrat", Arial, sans-serif;
+    }
+  }
+
+  .review-item {
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 10px;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+
+  .review-item .review {
+    padding: 18px;
+    padding-bottom: 20px;
+  }
+
+  .lebih-banyak {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .lebih-banyak2 {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .lihat-semua {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+    margin-right: 50px;
+    font-size: 15px;
+  }
+
+  .area-populer-tittle {
+    padding-left: 50px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    font-weight: bold;
+  }
+
+  .area-populer-content {
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-size: cover;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px auto;
+    flex-wrap: wrap;
+  }
+
+  .area-populer-img {
+    display: flex;
+    background-color: white;
+    width: 140px;
+    height: 100px;
+    margin: auto 5px;
+    background-size: 200px 100px;
+    overflow: hidden;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 10px;
+    margin-bottom: 20px;
+
+
+    &:hover {
+      transform: scale(1.1);
+      transition: 0.3s;
+      box-shadow: 1px 1px 5px black;
+
+    }
+  }
+
+  .footer {
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .footer-logo {
+    width: 70px;
+  }
+
+  .img-footer {
+    width: 70px;
+  }
+
+  .footer .footer-tittle {
+    font-size: 12px;
+  }
+
+  .footer-item {
+    font-size: 10px;
+    font-weight: lighter;
+    line-height: 1;
+  }
+
+  .card-details {
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    .gallery {
+
+      .xzoom-container {
+        display: block;
+        text-align: center;
+        margin-top: 15px;
+
+        .xzoom {
+          width: 90%;
+          height: 250px;
+          box-shadow: none;
+          margin-bottom: 10px;
+
+        }
+
+        .xzoom-gallery {
+          height: 80px;
+          width: 100px;
+
+        }
+
+        .xactive {
+          border: 4px solid;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+
+  /* review list end */
+}
+
+@media screen and (min-width: 768px) {
+  .section-popular-text {
+    font-family: "Playfair Display", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+  }
+
+  .popular-content {
+
+
+    .section-popular-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .card-kos {
+        min-width: 170px;
+        max-width: 200px;
+        height: 200px;
+        color: white;
+        padding: 20px;
+        background-size: cover;
+        margin-right: 10px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+
+        .place-name {
+          font-size: 20px;
+          color: white;
+        }
+
+        .btn-kos-details {
+          opacity: unset;
+          font-size: 12px;
+        }
+
+        .kos-button {
+          opacity: unset;
+          margin-top: 80%;
+          background-color: #ffbb00;
+          border-radius: 10px;
+          transition: 0.3s;
+
+          &:hover {
+            transform: scale(1.1);
+            background-color: #ffcc00;
+          }
+        }
+      }
+    }
+  }
+
+  @keyframes namakos {
+    0% {
+      opacity: 0%;
+      margin-top: 90%;
+    }
+
+    100% {
+      opacity: 100%;
+      margin-top: unset;
+    }
+  }
+
+  /* card list css start */
+  .container-card-list {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    flex-wrap: wrap;
+
+    .card-content {
+      border-radius: 10px;
+      padding: 5px;
+      margin: 5px;
+      max-width: 170px;
+      height: 200px;
+      background-color: white;
+      overflow: hidden;
+      box-shadow: unset;
+
+      .card-img {
+        border-radius: 10px 10px 10px 10px;
+        width: 160px;
+        height: 100px;
+        background-size: 160px 100px;
+        overflow: hidden;
+        background-image: cover;
+        box-sizing: border-box;
+      }
+
+      .card-content-header {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row;
+
+        .card-content-name {
+          font-weight: bold;
+          padding-top: 5px;
+          font-size: 12px;
+        }
+
+        .btn-kind-putra {
+          margin-top: -100px;
+          width: 50px;
+          border-radius: 5px;
+          font-size: 10px;
+          font-weight: bold;
+          color: rgb(0, 43, 122);
+          text-align: center;
+          background-color: rgb(108, 159, 253);
+          margin-bottom: auto;
+          margin-top: 5px;
+        }
+
+        .btn-kind-putri {
+          width: 50px;
+          border-radius: 5px;
+          font-size: 10px;
+          font-weight: bold;
+          color: rgb(112, 0, 122);
+          text-align: center;
+          background-color: rgb(253, 108, 241);
+          margin-bottom: auto;
+          margin-top: 5px;
+        }
+
+        .btn-kind-campur {
+          margin-top: 5px;
+          width: 50px;
+          border-radius: 5px;
+          font-size: 10px;
+          font-weight: bold;
+          color: rgb(4, 122, 0);
+          text-align: center;
+          background-color: rgb(120, 253, 108);
+          margin-bottom: auto;
+        }
+      }
+
+      .card-content-location {
+        font-weight: bold;
+        font-size: 10px;
+      }
+
+      .card-content-fasility {
+        font-size: 10px;
+        justify-items: flex-start;
+        font-style: italic;
+        font-size: lighter;
+      }
+
+      .card-content-footer {
+        padding-right: 10px;
+
+        .card-content-price {
+          font-weight: bold;
+          font-size: 12px;
+          display: flex;
+          justify-content: flex-end;
+          padding-bottom: 5px;
+          margin-top: -6%;
+          margin-bottom: 10px;
+        }
+
+        .card-content-latest {
+          font-size: 10px;
+          margin-top: -5px;
+          font-weight: lighter;
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+
+      &:hover {
+        background-color: rgb(250, 250, 250);
+        overflow: hidden;
+        box-shadow: 0px 0px 1px grey;
+        border: grey;
+
+      }
+    }
+
+
+  }
+
+  /* card list css end */
+  /* review list start */
+  .background-review {
+    padding: 20px 0px 20px;
+    background-image: url("../img/review.png");
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .review-tittle {
+    font-size: small;
+    padding-left: 5%;
+    color: white;
+  }
+
+  .container-review {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+
+  .review-content {
+    max-width: 170px;
+    max-height: 300px;
+    background-color: #ffffff;
+    margin: 5px;
+    border-radius: 10px;
+  }
+
+  div.review-content .user-review-image {
+    max-width: 40px;
+    max-height: 40px;
+    border-radius: 50px 50px 50px 50px;
+    background-color: black;
+    overflow: hidden;
+    margin: 10px;
+  }
+
+  div.review-content .user-review-image .user-review {
+    max-width: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    max-height: 40px;
+  }
+
+  .review-username .name-reviewer {
+    h5 {
+      font-weight: bold;
+      font-family: "assistant", Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    p {
+      font-size: 10px;
+      font-weight: 300;
+      font-family: "Montserrat", Arial, sans-serif;
+    }
+  }
+
+  .review-item {
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 10px;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+
+  .review-item .review {
+    padding: 18px;
+    padding-bottom: 20px;
+  }
+
+  .lebih-banyak {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+    margin-bottom: 50px;
+  }
+
+  .lebih-banyak2 {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    margin-bottom: 50px;
+  }
+
+  .lihat-semua {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+    font-weight: bold;
+  }
+
+  .area-populer-tittle {
+    padding-left: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .area-populer-content {
+    color: white;
+    background-size: cover;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .area-populer-img {
+    display: flex;
+    background-color: white;
+    width: 170px;
+    height: 100px;
+    background-size: 170px 100px;
+    box-shadow: unset;
+    overflow: hidden;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 20px;
+
+
+    &:hover {
+      transform: scale(1.1);
+      transition: 0.3s;
+      box-shadow: 1px 1px 5px black;
+
+    }
+  }
+
+  .footer {
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .footer-logo {
+    width: 120px;
+  }
+
+  .img-footer {
+    width: 120px;
+  }
+
+  .footer .footer-tittle {
+    font-size: 23px;
+  }
+
+  .footer-item {
+    font-size: 12px;
+    font-weight: lighter;
+  }
+
+  // halaman pencarian
+  .pencarian {
+    display: flex;
+    justify-content: space-between;
+    position: fixed center;
+    z-index: 10;
+    padding: auto;
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0px 0px 2px grey;
+
+    h6 {
+      font-size: 15px;
+    }
+
+    .dropdown-item {
+      font-size: 13px;
+    }
+
+    .btn-kategori {
+      padding: unset;
+      font-size: 13px;
+    }
+  }
+
+  .content-pencarian {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  .pagination {
+    justify-content: center;
+    margin-top: -30px;
+
+    .page-link {
+      color: #00004d;
+    }
+  }
+
+  // login css
+  .login-page {
+    display: flex;
+    justify-content: center;
+
+    .login-tittle {
+      margin-top: 30px;
+      text-align: center;
+
+    }
+
+    .login-login {
+      display: flex;
+    }
+
+    .login-form {
+      background-color: #f8f8f8;
+      padding: 50px;
+      margin-top: 20px;
+
+      .form-group {
+        text-align: left;
+      }
+    }
+
+
+    .beekost-login-tittle {
+      display: flex;
+      justify-content: center;
+      font-size: 900;
+      font-weight: bold;
+    }
+
+    .btn-login-mobile {
+      background-color: #00004d;
+      color: #ffffff;
+      width: 100%;
+
+
+      &:hover {
+        background-color: #15247c;
+        color: #ffffff;
+      }
+    }
+
+
+    .daftar-beekost {
+      padding-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+
+    }
+  }
+
+  .background-login {
+    display: fixed;
+    background-color: #f37121;
+    color: #f37121;
+    width: 800px;
+    height: 50%;
+    margin-right: -80px;
+    float: right;
+  }
+
+
+  /* review list end */
+}
+
+@media screen and (min-width: 1000px) {
+
+  //homepage
+  .section-popular-text {
+    font-family: "Playfair Display", sans-serif;
+    padding-top: 40px;
+    font-weight: bold;
+    font-size: 40px;
+    padding-bottom: 40px;
+  }
+
+  .popular-content {
+    max-width: 100%;
+
+    .section-popular-content {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      overflow: hidden;
+
+      .card-kos {
+
+        height: 300px;
+        max-width: 300px;
+        min-width: 250px;
+        color: white;
+        padding: 30px;
+        background-size: cover;
+        margin: 10px;
+        margin-bottom: 20px;
+        border-radius: 15 px;
+
+
+        .place-name {
+          font-size: 20px;
+          color: white;
+        }
+
+        .btn-kos-details {
+          opacity: unset;
+        }
+
+        .kos-button {
+          display: flex;
+          justify-content: center;
+          margin-top: 90%;
+          align-content: end;
+          background-color: #ffbb00;
+          border-radius: 10px;
+          transition: 0.3s;
+          opacity: unset;
+
+          &:hover {
+            transform: scale(1.1);
+            background-color: #ffcc00;
+          }
+        }
+      }
+    }
+  }
+
+  @keyframes namakos {
+    0% {
+      opacity: 0%;
+      margin-top: 90%;
+    }
+
+    100% {
+      opacity: 100%;
+      margin-top: unset;
+    }
+  }
+
+  /* review list start */
+  .container-review {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .background-review {
+    padding: 100px 0px 100px;
+    background-image: url("../img/review.png");
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .review-tittle {
+    padding-left: 100px;
+    padding-bottom: 20px;
+    color: white;
+  }
+
+  .review-content {
+    max-width: 250px;
+    min-height: 400px;
+    max-height: 400px;
+    background-color: #ffffff;
+    margin: 10px;
+    border-radius: 10px;
+  }
+
+  div.review-content .user-review-image {
+    max-width: 50px;
+    min-width: 30px;
+    min-height: 30px;
+    max-height: 50px;
+    border: medium black;
+    border-radius: 50px 50px 50px 50px;
+    background-color: black;
+    overflow: hidden;
+    margin: 10px;
+  }
+
+  div.review-content .user-review-image .user-review {
+    max-width: 50px;
+    min-width: 30px;
+    min-height: 30px;
+    max-height: 50px;
+  }
+
+  .review-username .name-reviewer {
+    h5 {
+      font-weight: bold;
+      font-family: "assistant", Helvetica, sans-serif;
+    }
+
+    p {
+      font-weight: 300;
+      font-family: "Montserrat", Arial, sans-serif;
+    }
+  }
+
+  .review-item {
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+
+  .review-item .review {
+    padding: 18px;
+    padding-bottom: 20px;
+  }
+
+  /* review list css end */
+  /* card list css start */
+
+  .container-card-list {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+    .next {
+      position: absolute;
+      right: 150px;
+      font-size: 1.5em;
+      cursor: pointer;
+    }
+
+    .prev {
+      position: absolute;
+      margin-top: 20%;
+      left: 150px;
+      font-size: 1.5em;
+      cursor: pointer;
+    }
+
+    .card-content {
+      border-radius: 10px;
+      padding: 10px;
+      margin: 10px;
+      max-width: 500px;
+      height: 300px;
+      background-color: rgb(250, 250, 250);
+      overflow: hidden;
+      box-shadow: unset;
+      border: grey;
+
+
+      .card-img {
+        border-radius: 10px 10px 10px 10px;
+        width: 230px;
+        height: 150px;
+        background-size: 230px 200px;
+        overflow: hidden;
+        background-image: cover;
+
+        box-sizing: border-box;
+      }
+
+      .card-content-header {
+        padding-top: 5px;
+        justify-content: space-between;
+
+        .card-content-name {
+          font-weight: bold;
+        }
+
+        .btn-kind-putra {
+          width: 50px;
+          border-radius: 5px;
+          font-size: 12px;
+          font-weight: bold;
+          color: rgb(0, 43, 122);
+          text-align: center;
+          background-color: rgb(108, 159, 253);
+          margin: auto 10px;
+        }
+
+        .btn-kind-putri {
+          width: 50px;
+          border-radius: 5px;
+          font-size: 12px;
+          font-weight: bold;
+          color: rgb(112, 0, 122);
+          text-align: center;
+          background-color: rgb(253, 108, 241);
+          margin: auto 10px;
+        }
+
+        .btn-kind-campur {
+          width: 50px;
+          border-radius: 5px;
+          font-size: 12px;
+          font-weight: bold;
+          color: rgb(4, 122, 0);
+          text-align: center;
+          background-color: rgb(120, 253, 108);
+          margin: auto 10px;
+        }
+      }
+
+      .card-content-location {
+        font-weight: bold;
+        font-size: 14px;
+        margin-bottom: 15%;
+      }
+
+      .card-content-fasility {
+        display: flex;
+        justify-content: end;
+        align-content: flex-end;
+        font-style: italic;
+        font-size: lighter;
+      }
+
+      .card-content-footer {
+        padding-right: 10px;
+
+        .card-content-price {
+          font-weight: bold;
+          display: flex;
+          justify-content: flex-end;
+          padding-bottom: 5px;
+          margin-bottom: 10px;
+        }
+
+        .card-content-latest {
+          font-size: 12px;
+          font-weight: lighter;
+          display: flex;
+          justify-content: flex-end;
+        }
+
+      }
+
+
+
+      &:hover {
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px;
+        max-width: 500px;
+        height: 300px;
+        background-color: rgb(250, 250, 250);
+        overflow: hidden;
+        box-shadow: 0px 0px 1px grey;
+        border: grey;
+
+      }
+    }
+  }
+
+
+  .lebih-banyak {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+    margin-bottom: 50px;
+  }
+
+  .lebih-banyak2 {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    margin-bottom: 50px;
+  }
+
+  .lihat-semua {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+    font-weight: bold;
+  }
+
+  .area-populer-tittle {
+    padding-left: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .area-populer-content {
+    color: white;
+    background-size: cover;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    display: flex;
+  }
+
+  .link:link {
+    color: white;
+  }
+
+  .area-populer-img {
+
+    display: flex;
+    background-color: white;
+    width: 250px;
+    height: 150px;
+    background-size: 270px 150px;
+    overflow: hidden;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: unset;
+    box-shadow: unset;
+
+
+
+    &:hover {
+      transform: scale(1.1);
+      transition: 0.3s;
+      box-shadow: 1px 1px 5px black;
+
+    }
+  }
+
+  .filter-black {
+    background-color: #00000052;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .cr {
+    font-family: 'Assistant', Courier, monospace;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    color: #5f5f5f;
+    padding: 20px;
+  }
+
+  .footer {
+
+
+    box-sizing: border-box;
+    padding-top: 50px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'assistant',
+      Courier,
+      monospace;
+  }
+
+  .footer-logo {
+    width: 200px;
+    padding: 20px;
+  }
+
+  .img-footer {
+    width: 200px;
+    margin-top: -50px;
+  }
+
+  .footer-item {
+    font-weight: lighter;
+    line-height: 20px;
+
+  }
+
+  // halaman pencarian
+  .pencarian {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    position: fixed center;
+    z-index: 10;
+    padding: auto;
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 1px 1px 5px grey;
+
+    .btn-kategori {
+      padding: unset;
+
+    }
+
+    .dropdown {
+      border: 1px #f37121;
+    }
+  }
+
+  .content-pencarian {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  .pagination {
+    justify-content: center;
+    margin-top: -30px;
+
+    .page-item {
+      color: grey;
+    }
+  }
+
+
+  // login css
+  .login-page {
+
+    .login-tittle {
+      margin-top: 30px;
+      padding-left: 70px;
+      text-align: left;
+
+    }
+
+    .login-login {
+      display: flex;
+      padding-left: 50px;
+    }
+
+    .login-form {
+      background-color: #f8f8f8;
+      padding: 50px;
+      margin-top: 20px;
+      padding-left: 50px;
+      font-size: unset;
+
+    }
+
+    .btn-login {
+      background-color: #00004d;
+      color: #ffffff;
+      width: 100%;
+
+      &:hover {
+        background-color: #15247c;
+        color: #ffffff;
+      }
+    }
+
+    .beekost-login-tittle {
+      display: flex;
+      justify-content: center;
+      font-size: 900;
+      font-weight: bold;
+    }
+
+    .form-check-input {
+      width: unset;
+      padding-top: 20px;
+    }
+
+    .login-img {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .img-login-1 {
+      height: 280px;
+      width: 240px;
+      margin-right: 20px;
+    }
+
+    .img-login-2 {
+      height: 180px;
+      width: 240px;
+    }
+
+    .img-login-3 {
+      margin-top: 20px;
+      margin-right: 20px;
+      height: 180px;
+      width: 240px;
+    }
+
+    .img-login-4 {
+      height: 280px;
+      width: 240px;
+      margin-top: -80px;
+    }
+
+  }
+
+  .background-login {
+    display: fixed;
+    background-color: #f37121;
+    color: #f37121;
+    width: 32%;
+    height: 800px;
+    float: right;
+    margin-top: -70%;
+  }
+
+
+  .section-details-header {
+    min-height: 380px;
+    background-color: #e4e6eb;
+    margin-top: -60px;
+    width: 100%;
+  }
+
+  .section-details-content {
+    margin-top: -210px;
+    min-height: 100vh;
+    box-sizing: border-box;
+
+    h5 {
+      font-family: 'Montserrat';
+    }
+
+    .breadcrumb {
+      color: #00004d;
+      background-color: transparent;
+      padding: 0%;
+      margin-bottom: 30px;
+    }
+
+    .breadcrumb-item {
+      &.active {
+        font-weight: bold;
+        color: #00004d;
+      }
+    }
+
+  }
+
+  .img-user {
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .pemilik-kos {
+
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+
+  .lokasi-kos {
+    width: 100%;
+    min-height: 300px;
+    padding-bottom: 20px;
+  }
+
+  .review-kos {
+    margin-bottom: 20px;
+
+    .review-item {
+      text-align: left;
+
+
+    }
+  }
+
+  .card-price {
+    padding-top: 20px;
+    padding-left: 20px;
+    border-radius: 10px;
+    line-height: 1.5;
+
+    .btn-kind-putra {
+      min-height: 20px;
+      width: 80px;
+      border-radius: 5px;
+      font-size: 15 px;
+      font-weight: 600;
+      color: rgb(0, 43, 122);
+      text-align: center;
+      background-color: rgb(108, 159, 253);
+      margin-bottom: auto;
+      margin-top: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+
+    }
+
+    .btn-kind-putri {
+      width: 50px;
+      border-radius: 5px;
+      font-size: 10px;
+      font-weight: bold;
+      color: rgb(112, 0, 122);
+      text-align: center;
+      background-color: rgb(253, 108, 241);
+      margin-bottom: auto;
+      margin-top: 5px;
+    }
+
+    .btn-kind-campur {
+      margin-top: 5px;
+      width: 50px;
+      border-radius: 5px;
+      font-size: 10px;
+      font-weight: bold;
+      color: rgb(4, 122, 0);
+      text-align: center;
+      background-color: rgb(120, 253, 108);
+      margin-bottom: auto;
+    }
+
+    .fasilitas-kos {
+      padding-left: 30px;
+
+
+      .fasilitas-item {
+        padding-bottom: 20px;
+        margin-left: unset;
+        padding-left: unset;
+        font-weight: 500;
+        font-size: 15px;
+      }
+    }
+
+    .btn-detail-kos {
+      background-color: #ffbb00;
+      color: #ffffff;
+      justify-content: center;
+      width: 100%;
+      margin-left: -10px;
+      margin-bottom: 20px;
+
+      &:hover {
+        background-color: #ffcc00;
+        color: #ffffff;
+      }
+
+    }
+
+  }
+
+  .card-price2 {
+    padding-top: 20px;
+    padding-left: 20px;
+    line-height: 1.5;
+    margin-top: -150px;
+    border-radius: 10px;
+
+    .btn-detail-kos {
+      background-color: #ffbb00;
+      color: #ffffff;
+      justify-content: center;
+      width: 100%;
+      margin-left: -10px;
+      margin-bottom: 20px;
+
+      &:hover {
+        background-color: #ffcc00;
+        color: #ffffff;
+      }
+
+    }
+
+    .btn-kamar {
+      background-color: #e4e6eb;
+      font-size: 15px;
+    }
+
+    .latest-update-detail {
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .btn-detail-review {
+      background-color: #00004d;
+      font-size: 13px;
+      color: #fff;
+
+      &:hover {
+        background-color: #06068f;
+      }
+    }
+
+    .btn-detail-hubungi {
+      font-size: 13px;
+      background-color: #ffbb00;
+      color: #fff;
+
+      &:hover {
+        background-color: #ffcc00;
+      }
+    }
+
+  }
+
+  .card-details {
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    .gallery {
+
+      .xzoom-container {
+        display: block;
+        text-align: center;
+        margin-top: 15px;
+
+        .xzoom {
+          width: 95%;
+          height: 500px;
+          box-shadow: none;
+          margin-bottom: 10px;
+
+        }
+
+        .xzoom-gallery {
+          height: 100px;
+          width: 120px;
+
+        }
+
+        .xactive {
+          border: 4px solid;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+
+  // sidebar
+  .user-nf {
+    display: flex;
+    justify-items: center;
+
+    .poto-user {
+
+      .poto-user-dashboard {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin: 0px;
+        padding: 0px;
+      }
+    }
+
+    .user-fe {
+      .user-name-dash {
+        font-size: 14px;
+        font-family: 'assistant';
+        font-weight: 600;
+        color: #fff;
+        text-transform: uppercase;
+      }
+
+    }
+  }
+
+
+  .section-dashboard-content {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-top: 100px;
+
+    h5 {
+      font-family: 'Montserrat';
+    }
+
+    .card-profil {
+      margin-left: -100px;
+      margin-top: -35px;
+      padding-top: 20px;
+      padding-left: 20px;
+      display: block;
+      overflow-y: auto;
+      overflow-x: hidden;
+      position: fixed;
+      float: left;
+
+
+
+
+      .dash-menu {
+        margin-left: 10px;
+
+        h5 {
+          font-family: 'montserrat';
+          font-weight: 400;
+          margin-bottom: 20px;
+
+          &:hover {
+            color: #f37121;
+          }
+        }
+
+
+        .dash-item {
+          margin-bottom: 1px;
+        }
+      }
+    }
+
+
+
+  }
+
+  .card.card-dash-content {
+    display: block;
+    border: 1px solid #0000001f;
+    margin-left: -100px;
+    padding-top: 20px;
+    padding-left: 20px;
+    border-radius: 10px;
+    margin-top: -10px;
+    box-sizing: border-box;
+
+    .dash-content-header {
+      display: flex;
+      justify-content: space-around;
+
+
+
+      .card.card-info-kos {
+        border-radius: 10px;
+        height: 100px;
+        width: 200px;
+        border-left: 3px solid #040492;
+        box-shadow: 1px 1px 10px #0000001f;
+        font-weight: bold;
+        font-family: 'montserrat';
+      }
+
+      .card.card-info-user {
+        border-radius: 10px;
+        height: 100px;
+        width: 200px;
+        border-left: 3px solid #ff00b3;
+        box-shadow: 1px 1px 10px #0000001f;
+        font-weight: bold;
+        font-family: 'montserrat';
+      }
+
+      .card-info-kota {
+        border-radius: 10px;
+        height: 100px;
+        width: 200px;
+        border-left: 3px solid #e7eb0c;
+        box-shadow: 1px 1px 10px #0000001f;
+        font-weight: bold;
+        font-family: 'montserrat';
+      }
+
+      .card-info-baru {
+        border-radius: 10px;
+        height: 100px;
+        width: 200px;
+        border-left: 3px solid #4beb0c;
+        box-shadow: 1px 1px 10px #0000001f;
+        font-weight: bold;
+        font-family: 'montserrat';
+      }
+
+    }
+
+    .dash-content-header-kos {
+      display: flex;
+      justify-content: space-around;
+
+
+
+      .card.card-info-kos {
+        border-radius: 10px;
+        height: 100px;
+        width: 200px;
+        border-left: 3px solid #040492;
+        box-shadow: 1px 1px 10px #0000001f;
+        font-weight: bold;
+        font-family: 'montserrat';
+      }
+
+      .card.card-info-user {
+        border-radius: 10px;
+        height: 100px;
+        width: 200px;
+        border-left: 3px solid #ff00b3;
+        box-shadow: 1px 1px 10px #0000001f;
+        font-weight: bold;
+        font-family: 'montserrat';
+      }
+
+      .card-info-kota {
+        border-radius: 10px;
+        height: 100px;
+        width: 200px;
+        border-left: 3px solid #e7eb0c;
+        box-shadow: 1px 1px 10px #0000001f;
+        font-weight: bold;
+        font-family: 'montserrat';
+      }
+
+      .card-info-baru {
+        border-radius: 10px;
+        height: 100px;
+        width: 200px;
+        border-left: 3px solid #4beb0c;
+        box-shadow: 1px 1px 10px #0000001f;
+        font-weight: bold;
+        font-family: 'montserrat';
+      }
+
+    }
+
+    .dash-content-item {
+      display: flex;
+
+      .pencarian-terbanyak {
+        display: block;
+        height: fit-content;
+        padding: 20px;
+
+        h5 {
+          font-family: 'Montserrat', serif;
+        }
+
+        li {
+          font-family: 'Assistant';
+        }
+      }
+
+      .review-terbaru {
+        height: 300px;
+        padding: 20px;
+
+        .container-review {
+          height: 500px;
+          overflow: hidden;
+
+          .review-content {
+            max-width: 150px;
+            height: 100px;
+            background-color: #e0dede;
+            margin: 5px;
+            border-radius: 10px;
+
+            .user-review-image {
+              max-width: 40px;
+              max-height: 40px;
+              border-radius: 50px 50px 50px 50px;
+              background-color: black;
+              overflow: hidden;
+              margin: 10px;
+
+              .user-review {
+                max-width: 40px;
+                min-width: 40px;
+                min-height: 40px;
+                max-height: 40px;
+              }
+            }
+
+
+            .review-username .name-reviewer {
+              h5 {
+                font-weight: bold;
+                font-family: "assistant", Helvetica, sans-serif;
+                font-size: 11px;
+              }
+
+              p {
+                font-size: 10px;
+                font-weight: 300;
+                font-family: "Montserrat", Arial, sans-serif;
+              }
+
+            }
+
+            .review-item {
+              box-sizing: border-box;
+              text-align: center;
+              font-size: 10px;
+              line-height: 1.5;
+              font-weight: 400;
+
+            }
+          }
+        }
+      }
+    }
+
+    /* list kos css end*/
+  }
+
+  .breadcrumb {
+    margin-left: -100px;
+    color: #00004d;
+    background-color: transparent;
+
+
+    .breadcrumb-item {
+      &.active {
+        font-weight: bold;
+        color: #00004d;
+      }
+    }
+  }
+}
+
+.user-nf {
+  display: flex;
+  justify-items: center;
+
+  .poto-user {
+
+    .poto-user-dashboard {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin: 0px;
+      padding: 0px;
+    }
+  }
+
+  .user-fe {
+    .user-name-dash {
+      font-size: 14px;
+      font-family: 'assistant';
+      font-weight: 600;
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+  }
+}
+
+.card-body {
+  .card-area {
+    .pengaturan-menu {
+      &:hover {
+        color: #040492;
+      }
+    }
+
+    .collapse {
+      .pengaturan-item {
+        &:hover {
+          color: #040492;
+        }
+      }
+
+    }
+  }
+}
