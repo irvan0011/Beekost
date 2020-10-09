@@ -1,0 +1,491 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="frontend/libraries/bootstrap/css/bootstrap.css" />
+      <link
+          href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet" />
+      <link rel="stylesheet" href="frontend/styles/main.css" />
+      <link rel="stylesheet" href="frontend/libraries/xzoom/xzoom.css">
+  </head>
+
+  <body>
+      <!-- Navigasi Bar -->
+      <nav class="row navbar navbar-expand-lg navbar-light  " style="background-color: #ffcc00;">
+          <a href="index.html" class="navbar-brand" style="color: #fff;">
+              <img src="frontend/img/logo.jpeg" alt="Logo BeeKost" />
+              BeeKost
+          </a>
+          <button class="navbar-toggler navbar-toggler-right mr-2" type="button" data-toggle="collapse"
+              data-target="#navb">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navb">
+              <ul class="navbar-nav ml-auto mr-3 d-flex align-items-center">
+                  <li class="nav-item mx-md-2">
+                      <a href="#" class="nav-link active">Home</a>
+                  </li>
+                  <li class="nav-item mx-md-2">
+                      <a href="#" class="nav-link">Pusat Bantuan</a>
+                  </li>
+                  <li class="nav-item mx-md-2">
+                      <a href="#" class="nav-link">Notifikasi</a>
+                  </li>
+                  <li class="nav-item mx-md-2">
+                      <form action="">
+                          <a href="#" class=""><button class="btn btn-outline-light">Masuk</button></a></form>
+                  </li>
+              </ul>
+
+              <!-- Mobile Button -->
+              <!--    <form class="form-inline my-2 my-md-0 d-md-none d-sm-block">
+        <button class="btn btn-login my-2 my-md-0"><a href="login.html" style="color: white;text-decoration: none;">
+            Masuk</a></button>
+      </form> -->
+              <!-- Destop Button -->
+              <!--     <form class="form-inline my-2 my-lg-0 d-none d-md-block">
+        <button class="btn btn-login btn-navbar-right my-2 my-lg-0 px-4">
+          <a href="login.html" style="color: white;text-decoration: none;">
+            Masuk</a>
+        </button>
+      </form> -->
+          </div>
+      </nav>
+      <!-- Navigasi Bar -->
+      <main>
+          <section class="section-details-header">
+              <div>
+
+              </div>
+          </section>
+          <!-- mobile start -->
+          <section class="section-details-content">
+              <div class="container">
+                  <div class="row d-lg-none d-sm-block">
+                      <div class="col p-0 ">
+                          <nav>
+                              <ol class="breadcrumb">
+                                  <li class="breadcrumb-item ml-3">
+                                      Kos
+                                  </li>
+                                  <li class="breadcrumb-item active">
+                                      Detail Kos
+                                  </li>
+                              </ol>
+                          </nav>
+                      </div>
+                  </div>
+                  <div class="row d-none d-lg-block">
+                      <div class="col p-0 ">
+                          <nav>
+                              <ol class="breadcrumb">
+                                  <li class="breadcrumb-item" style="margin-left: 100px;">
+                                      Kos
+                                  </li>
+                                  <li class="breadcrumb-item active">
+                                      Detail Kos
+                                  </li>
+                              </ol>
+                          </nav>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-lg-8 pl-lg-0" style="border:0px;">
+                          <div class="card card-details col-12">
+                              <h3 style="font-family: asisstant;" class="ml-3 mt-2 d-lg-none d-sm-block">Kos AXARA</h3>
+                              <P class="d-lg-none d-sm-block"><span class="mr-1"
+                                      style="font-size: 12px; margin-bottom: 10px;">
+                                      <img class="ml-3 mr-1" src="frontend/img/Icon material-location-on.png" alt=""> g
+                                      Melati, Kandang Limun, Muara Bangka Hulu</span>
+                              </P>
+                              <div class="gallery">
+                                  <div class="xzoom-container">
+                                      <img class="xzoom" id="xzoom-default" src="frontend/img/2.jpg"
+                                          xoriginal="frontend/img/2.jpg" />
+                                      <div class="xzoom-thumbs ">
+                                          <a href="frontend/img/2.jpg"><img class="xzoom-gallery" width="128"
+                                                  src="frontend/img/2.jpg" xpreview="frontend/img/2.jpg" /></a>
+                                          <a href="frontend/img/4.jpg"><img class="xzoom-gallery" width="128"
+                                                  src="frontend/img/4.jpg" xpreview="frontend/img/4.jpg" /></a>
+                                          <a href="frontend/img/3.jpg"><img class="xzoom-gallery" width="128"
+                                                  src="frontend/img/3.jpg" xpreview="frontend/img/3.jpg" /></a>
+                                          <a href="frontend/img/1.jpg"><img class="xzoom-gallery" width="128"
+                                                  src="frontend/img/1.jpg" xpreview="frontend/img/1.jpg" /></a>
+                                          <a href="frontend/img/2.jpg"><img class="xzoom-gallery" width="128"
+                                                  src="frontend/img/2.jpg" xpreview="frontend/img/2.jpg" /></a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <hr class="mx-3">
+                              <div class="d-none d-lg-block">
+                                  <h5 class="pl-4" style="font-weight: 500; font-family: 'montserrat';">Pemilik Kos</h5>
+                                  <div class=" pemilik-kos pl-4 mt-3">
+                                      <img src="frontend/img/0_e3523de4-f66b-4451-9ab6-9a04cb21c73f_816_612@2x.png"
+                                          class="img-user mr-3" alt="">
+                                      <p class="font-weight-bold">Irvan Repaldo</p>
+                                  </div>
+                                  <div class="lokasi-kos">
+                                      <h5 style="font-weight: 500; font-family: 'montserrat';" class="pl-4">Lokasi Kos
+                                      </h5>
+                                      <div class="lokasi-kos-detail embed-responsive embed-responsive-4by3"><iframe
+                                              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.310936983425!2d102.51856728431065!3d-3.515389805956471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3137380bed0b8b%3A0x22fe9d974a6a7cb3!2sMitsubishi%20Motors%20Lautan%20Berlian!5e0!3m2!1sid!2sid!4v1598352191198!5m2!1sid!2sid"
+                                              width="600" height="450" frameborder="0" style="border:0;"
+                                              allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                      </div>
+                                  </div>
+                                  <h5 style="font-weight: 500; font-family: 'montserrat', serif;" class="pl-4 mb-4">
+                                      Review User <span style="font-weight: bold;" class="pl-2">4.0 <img
+                                              src="frontend/img/Icon metro-star-full.png" alt=""></span></h5>
+                                  <div class="review-kos row pl-4 ">
+
+                                      <div class="review-item col-lg-4 mb-3">
+                                          <p class="mr-3">Keamanan</p>
+                                          <p class="font-weight-bold">4.0 <img
+                                                  src="frontend/img/Icon metro-star-full.png" alt=""></p>
+                                      </div>
+                                      <div class="review-item col-lg-4 mb-3">
+                                          <p>Kebersihan</p>
+                                          <p class="font-weight-bold">4.0 <img
+                                                  src="frontend/img/Icon metro-star-full.png" alt=""></p>
+                                      </div>
+                                      <div class="review-item col-lg-4 mb-3">
+                                          <p>Kenyamanan</p>
+                                          <p class="font-weight-bold">4.0 <img
+                                                  src="frontend/img/Icon metro-star-full.png" alt=""></p>
+                                      </div>
+                                      <div class="review-item col-lg-4 mb-3">
+                                          <p>Fasilitas</p>
+                                          <p class="font-weight-bold">4.0 <img
+                                                  src="frontend/img/Icon metro-star-full.png" alt=""></p>
+
+                                      </div>
+                                      <div class="review-item col-lg-4 mb-3">
+                                          <p>Lingkungan</p>
+                                          <p class="font-weight-bold">4.0 <img
+                                                  src="frontend/img/Icon metro-star-full.png" alt=""></p>
+
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="btn-kind-putra ml-3 mt-1 d-lg-none d-sm-block ">Putra</div>
+
+                              <div class="deskripsi-kos d-lg-none d-sm-block">
+                                  <h5>Deskripsi Kos</h5>
+                                  <p style="font-family: 'assistant';" class="pr-3 mb-5">Lorem, ipsum dolor sit amet
+                                      consectetur
+                                      adipisicing
+                                      elit. Quas, incidunt pariatur
+                                      cupiditate sit quod adipisci dolores asperiores iste id dolorem sapiente commodi
+                                      ducimus animi cum error perferendis eos accusamus impedit.</p>
+                                  <h5 class="pb-2">Fasilitas Kos</h5>
+                                  <ul class="fasilitas-kos row " style="list-style-type:disc">
+                                      <li class="fasilitas-item col-6">wi-fi</li>
+                                      <li class="fasilitas-item col-6">Listrik Sendiri</li>
+                                      <li class="fasilitas-item col-6">Air Gratis</li>
+                                      <li class="fasilitas-item col-6">Luas 3x4 m</li>
+                                      <li class="fasilitas-item col-6">Akses 24 jam</li>
+                                  </ul>
+                                  <button class="col-lg-12 btn btn-detail-kos navbar-toggler navbar-toggler-right"
+                                      type="button" data-toggle="collapse" data-target="#detailsf" type="button">
+                                      Tampilkan Lebih Banyak
+                                  </button>
+                              </div>
+                              <div class="tampilkan-lebih-banyak collapse navbar-collapse d-lg-none d-sm-block"
+                                  id="detailsf">
+
+                                  <div class="lokasi-kos">
+                                      <h5 style="font-weight: 500; font-family: 'montserrat';" class="pl-3">Lokasi Kos
+                                      </h5>
+                                      <P><span class="mr-1" style="font-size: 12px; margin-bottom: 10px;"><img
+                                                  class="ml-3 mr-1" src="frontend/img/Icon material-location-on.png"
+                                                  alt=""> g
+                                              Melati, Kandang Limun, Muara Bangka Hulu</span>
+                                          <div class="mt-3 lokasi-kos-detail embed-responsive embed-responsive-16by9">
+                                              <iframe
+                                                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.310936983425!2d102.51856728431065!3d-3.515389805956471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3137380bed0b8b%3A0x22fe9d974a6a7cb3!2sMitsubishi%20Motors%20Lautan%20Berlian!5e0!3m2!1sid!2sid!4v1598352191198!5m2!1sid!2sid"
+                                                  width="600" height="450" frameborder="0" style="border:0;"
+                                                  allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                          </div>
+                                  </div>
+                                  <h5 class="pl-4" style="font-weight: 500; font-family: 'montserrat';">Pemilik Kos</h5>
+                                  <div class=" pemilik-kos pl-4 mt-3">
+                                      <img src="frontend/img/0_e3523de4-f66b-4451-9ab6-9a04cb21c73f_816_612@2x.png"
+                                          class="img-user mr-3" alt="">
+                                      <p class="font-weight-bold">Irvan Repaldo</p>
+
+                                  </div>
+                                  <hr class="mx-3">
+                                  <div class="harga-kos">
+                                      <div class="row pl-3">
+                                          <button class="btn btn-kamar col-5">2 Kamar Kosong</button>
+                                          <div class="latest-update-detail col-7"> Terakhir Diupdate 02-12-2000 <br>Data
+                                              Dapat Berubah
+                                              Kapan-pun</div>
+                                      </div>
+                                      <hr class="mr-3">
+                                      <h5>Harga</h5>
+                                      <div class=" row">
+                                          <p class="col-6">Per Bulan</p>
+                                          <p class="colo-6 font-weight-bold">Rp.400.000</p>
+                                      </div>
+                                      <hr class="mr-3">
+                                      <div class=" row">
+                                          <p class="col-6">Per Enam Bulan</p>
+                                          <p class="colo-6 font-weight-bold">Rp.2.500.000</p>
+                                      </div>
+                                      <hr class="mr-3">
+                                      <div class=" row">
+                                          <p class="col-6">Per Tahun</p>
+                                          <p class="colo-6 font-weight-bold">Rp.5.000.000</p>
+                                      </div>
+                                      <hr class="mr-3">
+
+                                  </div>
+                                  <h5 style="font-weight: 500; font-family: 'montserrat', serif;"
+                                      class="pl-4 mb-4 mt-4">
+                                      Review User <span style="font-weight: bold;" class="pl-2">4.0 <img
+                                              src="frontend/img/Icon metro-star-full.png" alt=""></span></h5>
+                                  <div class="review-kos row pl-4 ">
+
+                                      <div class="review-item col-6 mb-3">
+                                          <p class="mr-3">Keamanan</p>
+                                          <p class="font-weight-bold">4.0 <img
+                                                  src="frontend/img/Icon metro-star-full.png" alt=""></p>
+                                      </div>
+                                      <div class="review-item col-6 mb-3">
+                                          <p>Kebersihan</p>
+                                          <p class="font-weight-bold">4.0 <img
+                                                  src="frontend/img/Icon metro-star-full.png" alt=""></p>
+                                      </div>
+                                      <div class="review-item col-6 mb-3">
+                                          <p>Kenyamanan</p>
+                                          <p class="font-weight-bold">4.0 <img
+                                                  src="frontend/img/Icon metro-star-full.png" alt=""></p>
+                                      </div>
+                                      <div class="review-item col-6 mb-3">
+                                          <p>Fasilitas</p>
+                                          <p class="font-weight-bold">4.0 <img
+                                                  src="frontend/img/Icon metro-star-full.png" alt=""></p>
+
+                                      </div>
+                                      <div class="review-item col-6 mb-3">
+                                          <p>Lingkungan</p>
+                                          <p class="font-weight-bold">4.0 <img
+                                                  src="frontend/img/Icon metro-star-full.png" alt=""></p>
+
+                                      </div>
+                                  </div>
+                                  <div class="row pb-3 hubungi-pemilik">
+                                      <button class="col-5  btn btn-detail-hubungi">Hubungi
+                                          Pemilik
+                                          Kos</button>
+                                      <div class="col-1"></div>
+                                      <button class="col-5 btn btn-detail-review">Beri
+                                          Review</button>
+                                  </div>
+                              </div>
+
+
+                          </div>
+                      </div>
+                      <div class="col-lg-4 pl-lg-0 d-none d-lg-block">
+                          <div class="card card-price">
+                              <h3 style="font-family: asisstant;">Kos AXARA</h3>
+                              <P><span><img src="frontend/img/Icon material-location-on.png" alt=""> g
+                                      Melati, Kandang Limun, Muara Bangka Hulu</span>
+                              </P>
+                              <div class="btn-kind-putra mt-3 ">Putra</div>
+                              <h5>Deskripsi Kos</h5>
+                              <p style="font-family: 'assistant';" class="pr-3 mb-5">Lorem, ipsum dolor sit amet
+                                  consectetur
+                                  adipisicing
+                                  elit. Quas, incidunt pariatur
+                                  cupiditate sit quod adipisci dolores asperiores iste id dolorem sapiente commodi
+                                  ducimus animi cum error perferendis eos accusamus impedit.</p>
+                              <h5 class="pb-2">Fasilitas Kos</h5>
+                              <ul class="fasilitas-kos row " style="list-style-type:disc">
+                                  <li class="fasilitas-item col-lg-4">wi-fi</li>
+                                  <li class="fasilitas-item col-lg-4">Listrik Sendiri</li>
+                                  <li class="fasilitas-item col-lg-4">Air Gratis</li>
+                                  <li class="fasilitas-item col-lg-4">Luas 3x4 m</li>
+                                  <li class="fasilitas-item col-lg-4">Akses 24 jam</li>
+                              </ul>
+                              <button class="col-lg-12 btn btn-detail-kos" type="submit">
+                                  Tampilkan Lebih Banyak
+                              </button>
+                          </div>
+                          <div class="card card-price2 mt-3">
+                              <div class="row pl-3">
+                                  <button class="btn btn-kamar col-lg-5">2 Kamar Kosong</button>
+                                  <div class="latest-update-detail col-lg-7"> Terakhir Diupdate 02-12-2000 <br>Data
+                                      Dapat Berubah
+                                      Kapan-pun</div>
+                              </div>
+                              <hr class="mr-3">
+                              <h5>Harga</h5>
+                              <div class=" row">
+                                  <p class="col-lg-6">Per Bulan</p>
+                                  <p class="colo-lg-6 font-weight-bold">Rp.400.000</p>
+                              </div>
+                              <hr class="mr-3">
+                              <div class=" row">
+                                  <p class="col-lg-6">Per Enam Bulan</p>
+                                  <p class="colo-lg-6 font-weight-bold">Rp.2.500.000</p>
+                              </div>
+                              <hr class="mr-3">
+                              <div class=" row">
+                                  <p class="col-lg-6">Per Tahun</p>
+                                  <p class="colo-lg-6 font-weight-bold">Rp.5.000.000</p>
+                              </div>
+                              <hr class="mr-3">
+                              <div class="row pb-3 pl-3">
+                                  <button class="col-lg-5  btn btn-detail-hubungi">Hubungi
+                                      Pemilik
+                                      Kos</button>
+                                  <div class="col-lg-1"></div>
+                                  <button class="col-lg-5 btn btn-detail-review">Beri
+                                      Review</button>
+                              </div>
+                          </div>
+                      </div>
+                      <h5 class="pl-4 mt-5 mb-0 pb-0" style="margin-bottom:-50px;"> Kos disekitar</h5>
+                      <div class="kos-disekitar-content mt-0">
+                          <div class="container-card-list">
+
+                              <div class="card-content">
+                                  <div class="card-img" style="background-image: url(frontend/img/baner.jpg);">
+                                  </div>
+                                  <div class="card-content-header">
+                                      <div class="card-content-name">
+                                          <p>Kos AXARA</p>
+                                      </div>
+                                      <div class="card-content-kind btn-kind-putra">Putra</div>
+                                  </div>
+
+                                  <div class="card-content-location">
+                                      <p>g.melati, kandang limun</p>
+                                  </div>
+                                  <div class="card-content-fasility">wi-fi, k. dalam</div>
+                                  <div class="card-content-footer">
+                                      <div class="card-content-price">Rp.5.000.000</div>
+                                      <div class="card-content-latest">Update Hari Ini</div>
+                                  </div>
+                              </div>
+                              <div class="card-content">
+                                  <div class="card-img" style="background-image: url(frontend/img/baner.jpg);">
+                                  </div>
+                                  <div class="card-content-header">
+                                      <div class="card-content-name">
+                                          <p>Kos AXARA</p>
+                                      </div>
+                                      <div class="card-content-kind btn-kind-putri">Putri</div>
+                                  </div>
+                                  <div class="card-content-location">
+                                      <p>g.melati, kandang limun</p>
+                                  </div>
+                                  <div class="card-content-fasility">wi-fi, k. dalam</div>
+                                  <div class="card-content-footer">
+                                      <div class="card-content-price">Rp.5.000.000</div>
+                                      <div class="card-content-latest">Update Hari Ini</div>
+                                  </div>
+                              </div>
+                              <div class="card-content">
+                                  <div class="card-img" style="background-image: url(frontend/img/baner.jpg);">
+                                  </div>
+                                  <div class="card-content-header">
+                                      <div class="card-content-name">
+                                          <p>Kos AXARA</p>
+                                      </div>
+                                      <div class="card-content-kind btn-kind-campur">Campur</div>
+                                  </div>
+                                  <div class="card-content-location">
+                                      <p>g.melati, kandang limun</p>
+                                  </div>
+                                  <div class="card-content-fasility">wi-fi, k. dalam</div>
+                                  <div class="card-content-footer">
+                                      <div class="card-content-price">Rp.5.000.000</div>
+                                      <div class="card-content-latest">Update Hari Ini</div>
+                                  </div>
+                              </div>
+                              <div class="card-content">
+                                  <div class="card-img" style="background-image: url(frontend/img/baner.jpg);">
+                                  </div>
+                                  <div class="card-content-header">
+                                      <div class="card-content-name">
+                                          <p>Kos AXARA</p>
+                                      </div>
+                                      <div class="card-content-kind btn-kind-putra">Putra</div>
+                                  </div>
+                                  <div class="card-content-location">
+                                      <p>g.melati, kandang limun</p>
+                                  </div>
+                                  <div class="card-content-fasility">wi-fi, k. dalam</div>
+                                  <div class="card-content-footer">
+                                      <div class="card-content-price">Rp.5.000.000</div>
+                                      <div class="card-content-latest">Update Hari Ini</div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+          </section>
+          <!-- mobile end -->
+
+      </main>
+
+      <!-- footer -->
+      <footer>
+          <hr>
+          <div class="footer">
+              <div class="footer-logo">
+                  <img src="frontend/img/logo.jpeg" alt="" class="img-footer">
+              </div>
+              <div class="footer-tentang-kami">
+                  <h5 class="footer-tittle">Bee Kost</h5>
+                  <p class="footer-item">Tentang Kami</p>
+                  <p class="footer-item">Job Bee Kost</p>
+                  <p class="footer-item">Pusat Bantuan</p>
+              </div>
+              <div class="hubungi-kami">
+                  <h5 class="footer-tittle">Kebijakan & Privasi</h5>
+                  <p class="footer-item">Kebijakan Privasi</p>
+                  <p class="footer-item">Syarat dan Ketentuan Umum</p>
+              </div>
+              <div class="hubungi-kami">
+                  <h5 class="footer-tittle">Hubungi Kami</h5>
+                  <p><i class="fab fa-facebook-square"></i><i class="fas fa-envelope-square"></i><i
+                          class="fab fa-whatsapp"></i>
+                  </p>
+                  <p><i class="fab fa-instagram"></i><i class="fab fa-twitter-square"></i></p>
+              </div>
+          </div>
+          <hr style="margin-bottom: 0px;">
+
+          <p class="text-center cr"> Since 2020 at Bencoolen</p>
+      </footer>
+      <!-- footer -->
+      <script src="frontend/libraries/jquerry/jquery-3.5.1.min.js"></script>
+      <script src="frontend/libraries/bootstrap/js/bootstrap.js"></script>
+      <script src="frontend/libraries/xzoom/xzoom.min.js"></script>
+      <script>
+          $(document).ready(function () {
+              $('.xzoom, .xzoom-gallery').xzoom({
+                  zoomWidth: 500,
+                  title: false,
+                  tint: '#333',
+                  Xoffset: 15
+              });
+          });
+      </script>
+
+  </body>
+
+  </html>

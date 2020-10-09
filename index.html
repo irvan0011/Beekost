@@ -1,431 +1,507 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="frontend/libraries/bootstrap/css/bootstrap.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="frontend/styles/main.css" />
-  </head>
 
-  <body>
-    <!-- Navigasi Bar -->
-    <div class="container">
-      <nav class="row navbar navbar-expand-lg navbar-light bg-white">
-        <a href="index.html" class="navbar-brand">
-          <img src="frontend/img/logo.jpeg" alt="Logo BeeKost" />
-          BeeKost
-        </a>
-        <button
-          class="navbar-toggler navbar-toggler-right"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navb"
-        >
-          <span class="navbar-toggler-icon"></span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="frontend/libraries/bootstrap/css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="frontend/fontawesome-free-5.14.0-web/css/fontawesome.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="frontend/styles/main.css" />
+</head>
+
+<body>
+  <!-- Navigasi Bar -->
+  <nav class="row navbar navbar-expand-lg navbar-light  " style="background-color: #ffcc00;">
+    <a href="index.html" class="navbar-brand" style="color: #fff;">
+      <img src="frontend/img/logo.jpeg" alt="Logo BeeKost" />
+      BeeKost
+    </a>
+    <button class="navbar-toggler navbar-toggler-right mr-2" type="button" data-toggle="collapse" data-target="#navb">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navb">
+      <ul class="navbar-nav ml-auto mr-3 d-flex align-items-center">
+        <li class="nav-item mx-md-2">
+          <a href="#" class="nav-link active">Home</a>
+        </li>
+        <li class="nav-item mx-md-2">
+          <a href="#" class="nav-link">Pusat Bantuan</a>
+        </li>
+        <li class="nav-item mx-md-2">
+          <a href="#" class="nav-link">Notifikasi</a>
+        </li>
+        <li class="nav-item mx-md-2">
+          <form action="">
+            <a href="#" class=""><button class="btn btn-outline-light">Masuk</button></a></form>
+        </li>
+      </ul>
+
+      <!-- Mobile Button -->
+      <!--    <form class="form-inline my-2 my-md-0 d-md-none d-sm-block">
+        <button class="btn btn-login my-2 my-md-0"><a href="login.html" style="color: white;text-decoration: none;">
+            Masuk</a></button>
+      </form> -->
+      <!-- Destop Button -->
+      <!--     <form class="form-inline my-2 my-lg-0 d-none d-md-block">
+        <button class="btn btn-login btn-navbar-right my-2 my-lg-0 px-4">
+          <a href="login.html" style="color: white;text-decoration: none;">
+            Masuk</a>
         </button>
-
-        <div class="collapse navbar-collapse" id="navb">
-          <ul class="navbar-nav ml-auto mr-3">
-            <li class="nav-item mx-md-2">
-              <a href="#" class="nav-link active">Home</a>
-            </li>
-            <li class="nav-item mx-md-2">
-              <a href="#" class="nav-link">Pusat Bantuan</a>
-            </li>
-            <li class="nav-item mx-md-2">
-              <a href="#" class="nav-link">Notifikasi</a>
-            </li>
-          </ul>
-
-          <!-- Mobile Button -->
-          <form class="form-inline my-2 my-md-0 d-md-none d-sm-block">
-            <button class="btn btn-login my-2 my-md-0">Masuk</button>
-          </form>
-          <!-- Destop Button -->
-          <form class="form-inline my-2 my-lg-0 d-none d-md-block">
-            <button class="btn btn-login btn-navbar-right my-2 my-lg-0 px-4">
-              Masuk
-            </button>
-          </form>
-        </div>
-      </nav>
+      </form> -->
     </div>
-    <!-- Navigasi Bar -->
-    <!-- Header -->
-    <header class="text-center">
-      <div class="container d-flex flex-column">
-        <div class="row justify-content-center">
-          <div class="col-2 col-md-1 mr-md-1">
-            <img src="frontend/img/Human.png" alt="" class="img-kelebihan" />
-            <p class="txt-kelebihan">250+ Kos</p>
-          </div>
-          <div class="col-2 col-md-1 mr-md-1">
-            <img src="frontend/img/Human-1.png" alt="" class="img-kelebihan" />
-            <p class="txt-kelebihan">250+ Kos</p>
-          </div>
-          <div class="col-2 col-md-1 mr-md-1">
-            <img src="frontend/img/Human-2.png" alt="" class="img-kelebihan" />
-            <p class="txt-kelebihan">250+ Kos</p>
-          </div>
-          <div class="col-2 col-md-1 mr-md-1">
-            <img src="frontend/img/Human-3.png" alt="" class="img-kelebihan" />
-            <p class="txt-kelebihan">250+ Kos</p>
+  </nav>
+  <!-- Navigasi Bar -->
+  <!-- Header -->
+  <header class="text-center">
+    <div class="container d-flex flex-column">
+      <div class="row justify-content-center">
+        <div class="col-2 col-md-1 mr-md-1">
+          <img src="frontend/img/Human.png" alt="" class="img-kelebihan" />
+          <p class="txt-kelebihan">250+ Kos</p>
+        </div>
+        <div class="col-2 col-md-1 mr-md-1">
+          <img src="frontend/img/Human-1.png" alt="" class="img-kelebihan" />
+          <p class="txt-kelebihan">250+ Kos</p>
+        </div>
+        <div class="col-2 col-md-1 mr-md-1">
+          <img src="frontend/img/Human-2.png" alt="" class="img-kelebihan" />
+          <p class="txt-kelebihan">250+ Kos</p>
+        </div>
+        <div class="col-2 col-md-1 mr-md-1">
+          <img src="frontend/img/Human-3.png" alt="" class="img-kelebihan" />
+          <p class="txt-kelebihan">250+ Kos</p>
+        </div>
+      </div>
+      <br>
+    </div>
+    <!-- Mobile -->
+    <form class="my-2 my-md-0 d-md-none d-sm-block">
+      <div class="input-group mb-3 mx-auto" style="width: 70%;">
+        <input type="text" class="form-control" placeholder="Recipient's username" />
+        <div class="input-group-append">
+          <button class="btn btn-cari" style="z-index: 1;" type="submit">
+            Search
+          </button>
+        </div>
+      </div>
+    </form>
+    <!-- Mobile -->
+    <!-- Desktop -->
+    <form class="my-2 my-lg-0 d-none d-md-block">
+      <div class="input-group mb-3 mx-auto" style="width: 40%;">
+        <input type="text" class="form-control" placeholder="Mulai Cari Tempat Tinggal" />
+        <div class="input-group-append">
+          <button class="btn btn-cari" style="z-index: 1;" type="submit">
+            Search
+          </button>
+        </div>
+      </div>
+    </form>
+    <!-- Desktop -->
+    <p class="pt-3">
+      Temukan Tempat Tinggal yang Anda Sukai <br />
+      Hanya Dengan Satu Kali Klik
+    </p>
+  </header>
+  <!-- Header -->
+
+  <main>
+    <section class="section-popular" id="popular">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="text-center section-popular-heading">
+              <h2 class="section-popular-text">Cari Apa?</h2>
+              <i class="fa fa-globe"></i>
+            </div>
           </div>
         </div>
       </div>
-      <!-- Mobile -->
-      <form class="my-2 my-md-0 d-md-none d-sm-block">
-        <div class="input-group mb-3 mx-auto" style="width: 70%;">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Recipient's username"
-          />
-          <div class="input-group-append">
-            <button class="btn btn-cari" type="submit">
-              Search
-            </button>
-          </div>
-        </div>
-      </form>
-      <!-- Mobile -->
-      <!-- Desktop -->
-      <form class="my-2 my-lg-0 d-none d-md-block">
-        <div class="input-group mb-3 mx-auto" style="width: 40%;">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Mulai Cari Tempat Tinggal"
-          />
-          <div class="input-group-append">
-            <button class="btn btn-cari" type="submit">
-              Search
-            </button>
-          </div>
-        </div>
-      </form>
-      <!-- Desktop -->
-      <p class="pt-3">
-        Temukan Tempat Tinggal yang Anda Sukai <br />
-        Hanya Dengan Satu Kali Klik
-      </p>
-    </header>
-    <!-- Header -->
+    </section>
 
-    <main>
-      <section class="section-popular" id="popular">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <div class="text-center section-popular-heading">
-                <h2 class="section-popular-text">Cari Apa?</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <sction class="popular-content" id="popular-content">
-        <div class="container">
-          <div class="section-popular-content row justify-content-center">
-            <div class="card-kosan col-lg-3">
-              <div
-                class="card-kos text-center d-flex flex-column"
-                style="background-image: url(frontend/img/kos.png);"
-              >
-                <div class="place-name">Kos</div>
-                <div class="kos-button mt-auto">
-                  <a
-                    href=""
-                    class="btn btn-kos-details px-md-4 px-sm-2"
-                    style="color: white;"
-                    >Mulai Cari</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="card-apart col-lg-3">
-              <div
-                class="card-kos text-center d-flex flex-column"
-                style="background-image: url(frontend/img/apartement.png);"
-              >
-                <div class="place-name">Apartement</div>
-                <div class="kos-button mt-auto">
-                  <a
-                    href=""
-                    class="btn btn-kos-details px-md-4 px-sm-1"
-                    style="color: white;"
-                    >Mulai Cari</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="card-hotel col-lg-3">
-              <div
-                class="card-kos text-center d-flex flex-column"
-                style="background-image: url(frontend/img/hotel.png);"
-              >
-                <div class="place-name">Hotel</div>
-                <div class="kos-button mt-auto">
-                  <a
-                    href=""
-                    class="btn btn-kos-details py-sm-1 px-sm-1 px-md-4"
-                    style="color: white;"
-                    >Mulai Cari</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="card-bedeng col-lg-3">
-              <div
-                class="card-kos text-center d-flex flex-column"
-                style="background-image: url(frontend/img/bedengan.png);"
-              >
-                <div class="place-name">Bedengan</div>
-                <div class="kos-button mt-auto">
-                  <a
-                    href=""
-                    class="btn btn-kos-details px-md-4 px-sm-1"
-                    style="color: white;"
-                    >Mulai Cari</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </sction>
-      <section class="rekomendasi" id="rekomendasi">
-        <div class="container-rekomendasi">
-          <div class="d-flex mt-5">
-            <h5>
-              Rekomendasi Kos di
-              <div class="btn-group">
-                <button type="button" class="btn">
-                  Bengkulu
-                </button>
-                <button
-                  type="button"
-                  class="btn dropdown-toggle dropdown-toggle-split"
-                  id="dropdownMenuReference"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  data-reference="parent"
-                >
-                  <span class="sr-only">Toggle Dropdown</span>
-                </button>
-                <div
-                  class="dropdown-menu"
-                  aria-labelledby="dropdownMenuReference"
-                >
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Separated link</a>
-                </div>
-              </div>
-            </h5>
-          </div>
-        </div>
-        <div class="container-card-list">
-          <div class="card-content">
-            <div
-              class="card-img"
-              style="background-image: url(frontend/img/baner.jpg);"
-            >
-          </div>
-            <div class="card-content-header">
-              <div class="card-content-name"><p>Kos AXARA</p></div>
-              <div class="card-content-kind btn-kind-putra">Putra</div>
-            </div>
-            <div class="card-content-location">
-              <p>g.melati, kandang limun</p>
-            </div>
-            <div class="card-content-fasility">wi-fi, k. dalam</div>
-            <div class="card-content-footer">
-              <div class="card-content-price">Rp.5.000.000</div>
-              <div class="card-content-latest">Update Hari Ini</div>
-            </div>
-          </div>
-          <div class="card-content">
-            <div class="card-img" style="background-image: url(frontend/img/baner.jpg);"></div>
-            <div class="card-content-header">
-              <div class="card-content-name">
-                <p>Kos AXARA</p>
-              </div>
-              <div class="card-content-kind btn-kind-putri">Putri</div>
-            </div>
-            <div class="card-content-location">
-              <p>g.melati, kandang limun</p>
-            </div>
-            <div class="card-content-fasility">wi-fi, k. dalam</div>
-            <div class="card-content-footer">
-              <div class="card-content-price">Rp.5.000.000</div>
-              <div class="card-content-latest">Update Hari Ini</div>
-            </div>
-          </div>
-          <div class="card-content">
-            <div class="card-img" style="background-image: url(frontend/img/baner.jpg);"></div>
-            <div class="card-content-header">
-              <div class="card-content-name">
-                <p>Kos AXARA</p>
-              </div>
-              <div class="card-content-kind btn-kind-campur">Campur</div>
-            </div>
-            <div class="card-content-location">
-              <p>g.melati, kandang limun</p>
-            </div>
-            <div class="card-content-fasility">wi-fi, k. dalam</div>
-            <div class="card-content-footer">
-              <div class="card-content-price">Rp.5.000.000</div>
-              <div class="card-content-latest">Update Hari Ini</div>
-            </div>
-          </div>
-          <div class="card-content">
-            <div class="card-img" style="background-image: url(frontend/img/baner.jpg);"></div>
-            <div class="card-content-header">
-              <div class="card-content-name">
-                <p>Kos AXARA</p>
-              </div>
-              <div class="card-content-kind btn-kind-putra">Putra</div>
-            </div>
-            <div class="card-content-location">
-              <p>g.melati, kandang limun</p>
-            </div>
-            <div class="card-content-fasility">wi-fi, k. dalam</div>
-            <div class="card-content-footer">
-              <div class="card-content-price">Rp.5.000.000</div>
-              <div class="card-content-latest">Update Hari Ini</div>
-            </div>
-          </div>
-        </div>
-      <section class="-section-review" id="review">
-        <div class="background-review">
-          <div class="review-tittle">
-            <h5>Penilaian User</h5>
-          </div>
-          <div class="container-review">
-            <div class="review-content">
-              <div class="review-header">
-                <div class="review-username pt-3 pl-3 row">
-                  <div class="user-review-image">
-                    <img src="frontend/img/Human-2.png" class="user-review" />
-                  </div>
-                  <div class="name-reviewer pt-2 pl-3">
-                    <h5>Irvan Repaldo</h5>
-                    <p>Pemilik Kos</p>
-                  </div>
-                </div>
-                <div class="review-rate pl-3">
-                  <img src="frontend/img/star.png" alt="" />
-                </div>
-              </div>
-              <div class="review-item">
-                <span>
-                  <p class="pt-4 review">
-                    " Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Non voluptatem distinctio reiciendis odit nostrum quos, amet
-                    incidunt autem at aut perspiciatis minima mollitia vel! Iste
-                    enim quae consectetur adipisci nisi."
-                  </p></span
-                >
-              </div>
-            </div>
-            <div class="review-content">
-              <div class="review-header">
-                <div class="review-username pt-3 pl-3 row">
-                  <div class="user-review-image">
-                    <img src="frontend/img/Human-2.png" class="user-review" />
-                  </div>
-                  <div class="name-reviewer pt-2 pl-3">
-                    <h5>Irvan Repaldo</h5>
-                    <p>Pemilik Kos</p>
-                  </div>
-                </div>
-                <div class="review-rate pl-3">
-                  <img src="frontend/img/star.png" alt="" />
-                </div>
-              </div>
-              <div class="review-item">
-                <span>
-                  <p class="pt-4 review">
-                    " Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Non voluptatem distinctio reiciendis odit nostrum quos, amet
-                    incidunt autem at aut perspiciatis minima mollitia vel! Iste
-                    enim quae consectetur adipisci nisi."
-                  </p>
-                </span>
-              </div>
-            </div>
+    <sction class="popular-content d-md-none d-sm-block" id="popular-content">
+      <div class="section-popular-content ">
 
-            <div class="review-content">
-              <div class="review-header">
-                <div class="review-username pt-3 pl-3 row">
-                  <div class="user-review-image">
-                    <img src="frontend/img/Human-2.png" class="user-review" />
-                  </div>
-                  <div class="name-reviewer pt-2 pl-3">
-                    <h5>Irvan Repaldo</h5>
-                    <p>Pemilik Kos</p>
-                  </div>
+        <a href="kos.html" style="color: white;">
+          <div class="card-kos text-center" style=" background-image: url(frontend/img/kos.png);">
+            <div class="place-name">Kos</div>
+          </div>
+        </a>
+        <a href="kos.html" style="color: white;">
+          <div class="card-kos text-center" style="background-image: url(frontend/img/apartement.png);">
+            <div class="place-name">Apartement</div>
+            <div class="kos-button ">
+              Mulai Cari
+            </div>
+          </div>
+        </a>
+        <a href="kos.html" style="color: white;">
+          <div class="card-kos text-center" style="background-image: url(frontend/img/hotel.png);">
+            <div class="place-name">Hotel</div>
+            <div class="kos-button">
+              Mulai Cari
+            </div>
+          </div>
+        </a>
+        <a href="kos.html" style="color: white;">
+          <div class="card-kos text-center" style="background-image: url(frontend/img/bedengan.png);">
+            <div class="place-name">Bedengan</div>
+            <div class="kos-button ">
+              Mulai Cari
+            </div>
+          </div>
+        </a>
+      </div>
+    </sction>
+    </section>
+    <sction class="popular-content d-none d-md-block" id="popular-content">
+      <div class="section-popular-content ">
+
+        <div class="card-kos text-center" style=" background-image: url(frontend/img/kos.png);">
+          <div class="place-name">Kos</div>
+          <div class="kos-button ">
+            <a href="kos.html" class="btn btn-kos-details " style="color: white;">Mulai Cari</a>
+          </div>
+        </div>
+        <div class="card-kos text-center" style="background-image: url(frontend/img/apartement.png);">
+          <div class="place-name">Apartement</div>
+          <div class="kos-button ">
+            <a href="kos.html" class="btn btn-kos-details " style="color: white;">Mulai Cari</a>
+          </div>
+        </div>
+        <div class="card-kos text-center" style="background-image: url(frontend/img/hotel.png);">
+          <div class="place-name">Hotel</div>
+          <div class="kos-button">
+            <a href="kos.html" class="btn btn-kos-details  " style="color: white;">Mulai Cari</a>
+          </div>
+        </div>
+        <div class="card-kos text-center" style="background-image: url(frontend/img/bedengan.png);">
+          <div class="place-name">Bedengan</div>
+          <div class="kos-button ">
+            <a href="kos.html
+            " class="btn btn-kos-details " style="color: white;">Mulai Cari</a>
+          </div>
+        </div>
+      </div>
+    </sction>
+
+
+    <section class="rekomendasi" id="rekomendasi">
+      <div class="container container-rekomendasi">
+        <div class="mt-5 ml-4  rekomendasi-tittle">
+          <h5>
+            Rekomendasi Kos di
+            <div class="btn-group">
+              <select class="form-control form-control-sm border-0">
+
+                <option value="bengkulu">Bengkulu</option>
+                <option value="kepahiang">kepahiang</option>
+                <option value="curup">curup</option>
+              </select>
+            </div>
+          </h5>
+
+        </div>
+
+      </div>
+    </section>
+
+    <div class="container-card-list">
+
+      <a href="detail.html" style="color:#000; text-decoration: none;">
+        <div class="card-content">
+          <div class="card-img" style="background-image: url(frontend/img/baner.jpg);">
+          </div>
+          <div class="card-content-header">
+            <div class="card-content-name">
+              <p>Kos AXARA</p>
+            </div>
+            <div class="card-content-kind btn-kind-putra">Putra</div>
+          </div>
+
+          <div class="card-content-location">
+            <p>g.melati, kandang limun</p>
+          </div>
+          <div class="card-content-fasility">wi-fi, k. dalam</div>
+          <div class="card-content-footer">
+            <div class="card-content-price">Rp.5.000.000</div>
+            <div class="card-content-latest">Update Hari Ini</div>
+          </div>
+        </div>
+      </a>
+      <a href="detail.html" style="color:#000;text-decoration: none;">
+        <div class="card-content">
+          <div class="card-img" style="background-image: url(frontend/img/baner.jpg);">
+          </div>
+          <div class="card-content-header">
+            <div class="card-content-name">
+              <p>Kos AXARA</p>
+            </div>
+            <div class="card-content-kind btn-kind-putra">Putra</div>
+          </div>
+
+          <div class="card-content-location">
+            <p>g.melati, kandang limun</p>
+          </div>
+          <div class="card-content-fasility">wi-fi, k. dalam</div>
+          <div class="card-content-footer">
+            <div class="card-content-price">Rp.5.000.000</div>
+            <div class="card-content-latest">Update Hari Ini</div>
+          </div>
+        </div>
+      </a>
+      <a href="detail.html" style="color:#000;text-decoration: none;">
+        <div class="card-content">
+          <div class="card-img" style="background-image: url(frontend/img/baner.jpg);">
+          </div>
+          <div class="card-content-header">
+            <div class="card-content-name">
+              <p>Kos AXARA</p>
+            </div>
+            <div class="card-content-kind btn-kind-putra">Putra</div>
+          </div>
+
+          <div class="card-content-location">
+            <p>g.melati, kandang limun</p>
+          </div>
+          <div class="card-content-fasility">wi-fi, k. dalam</div>
+          <div class="card-content-footer">
+            <div class="card-content-price">Rp.5.000.000</div>
+            <div class="card-content-latest">Update Hari Ini</div>
+          </div>
+        </div>
+      </a>
+      <a href="detail.html" style="color:#000;text-decoration: none;">
+        <div class="card-content">
+          <div class="card-img" style="background-image: url(frontend/img/baner.jpg);">
+          </div>
+          <div class="card-content-header">
+            <div class="card-content-name">
+              <p>Kos AXARA</p>
+            </div>
+            <div class="card-content-kind btn-kind-putra">Putra</div>
+          </div>
+
+          <div class="card-content-location">
+            <p>g.melati, kandang limun</p>
+          </div>
+          <div class="card-content-fasility">wi-fi, k. dalam</div>
+          <div class="card-content-footer">
+            <div class="card-content-price">Rp.5.000.000</div>
+            <div class="card-content-latest">Update Hari Ini</div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="lebih-banyak">
+      <a href="kos.html">Lebih Banyak</a>
+    </div>
+    <section class="section-review" style="margin-bottom: 50px;" id="review">
+      <div class="background-review">
+        <div class="review-tittle">
+          <h5>Penilaian User</h5>
+        </div>
+        <div class="container-review">
+          <div class="review-content">
+            <div class="review-header">
+              <div class="review-username pt-2 pl-3 row">
+                <div class="user-review-image">
+                  <img src="frontend/img/Human-2.png" class="user-review" />
                 </div>
-                <div class="review-rate pl-3">
-                  <img src="frontend/img/star.png" alt="" />
+                <div class="name-reviewer pt-3">
+                  <h5>Irvan Repaldo</h5>
+                  <p>Pemilik Kos</p>
                 </div>
-              </div>
-              <div class="review-item">
-                <span>
-                  <p class="pt-4 review">
-                    " Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Non voluptatem distinctio reiciendis odit nostrum quos, amet
-                    incidunt autem at aut perspiciatis minima mollitia vel! Iste
-                    enim quae consectetur adipisci nisi."
-                  </p>
-                </span>
               </div>
             </div>
-            <div class="review-content">
-              <div class="review-header">
-                <div class="review-username pt-3 pl-3 row">
-                  <div class="user-review-image">
-                    <img src="frontend/img/Human-2.png" class="user-review" />
-                  </div>
-                  <div class="name-reviewer pt-2 pl-3">
-                    <h5>Irvan Repaldo</h5>
-                    <p>Pemilik Kos</p>
-                  </div>
+            <div class="review-item">
+              <span>
+                <p class="pt-2 review">
+                  " Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Non voluptatem distinctio reiciendis odit nostrum quos, amet
+                  incidunt autem at aut perspiciatis minima mollitia vel! Iste
+                  enim quae consectetur adipisci nisi."
+                </p>
+              </span>
+            </div>
+          </div>
+          <div class="review-content">
+            <div class="review-header">
+              <div class="review-username pt-2 pl-3 row">
+                <div class="user-review-image">
+                  <img src="frontend/img/Human-2.png" class="user-review" />
                 </div>
-                <div class="review-rate pl-3">
-                  <img src="frontend/img/star.png" />
+                <div class="name-reviewer pt-3">
+                  <h5>Irvan Repaldo</h5>
+                  <p>Pemilik Kos</p>
                 </div>
               </div>
-              <div class="review-item">
-                <span>
-                  <p class="pt-4 review">
-                    " Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Non voluptatem distinctio reiciendis odit nostrum quos, amet
-                    incidunt autem at aut perspiciatis minima mollitia vel! Iste
-                    enim quae consectetur adipisci nisi."
-                  </p>
-                </span>
+            </div>
+            <div class="review-item">
+              <span>
+                <p class="pt-2 review">
+                  " Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Non voluptatem distinctio reiciendis odit nostrum quos, amet
+                  incidunt autem at aut perspiciatis minima mollitia vel! Iste
+                  enim quae consectetur adipisci nisi."
+                </p>
+              </span>
+            </div>
+          </div>
+          <div class="review-content">
+            <div class="review-header">
+              <div class="review-username pt-2 pl-3 row">
+                <div class="user-review-image">
+                  <img src="frontend/img/Human-2.png" class="user-review" />
+                </div>
+                <div class="name-reviewer pt-3">
+                  <h5>Irvan Repaldo</h5>
+                  <p>Pemilik Kos</p>
+                </div>
               </div>
+            </div>
+            <div class="review-item">
+              <span>
+                <p class="pt-2 review">
+                  " Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Non voluptatem distinctio reiciendis odit nostrum quos, amet
+                  incidunt autem at aut perspiciatis minima mollitia vel! Iste
+                  enim quae consectetur adipisci nisi."
+                </p>
+              </span>
+            </div>
+          </div>
+          <div class="review-content">
+            <div class="review-header">
+              <div class="review-username pt-2 pl-3 row">
+                <div class="user-review-image">
+                  <img src="frontend/img/Human-2.png" class="user-review" />
+                </div>
+                <div class="name-reviewer pt-3">
+                  <h5>Irvan Repaldo</h5>
+                  <p>Pemilik Kos</p>
+                </div>
+              </div>
+            </div>
+            <div class="review-item">
+              <span>
+                <p class="pt-2 review">
+                  " Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Non voluptatem distinctio reiciendis odit nostrum quos, amet
+                  incidunt autem at aut perspiciatis minima mollitia vel! Iste
+                  enim quae consectetur adipisci nisi."
+                </p>
+              </span>
             </div>
           </div>
         </div>
-      </section>
-    </main>
+        <div class="lihat-semua"><a href="#">Lihat Semua</a></div>
+      </div>
 
-    <script src="frontend/libraries/jquerry/jquery-3.5.1.min.js"></script>
-    <script src="frontend/libraries/bootstrap/js/bootstrap.js"></script>
-    <script src="frontend/libraries/retina/retina.min.js"></script>
-  </body>
+    </section>
+    <section class="section-area-populer">
+      <div class="area-populer">
+        <div>
+          <p class="area-populer-tittle">Area Populer</p>
+        </div>
+        <div class="area-populer-content">
+
+          <a href="kos.html" style="color:#fff; text-decoration: none;">
+            <div class="area-populer-img" style="background-image: url(frontend/img/baner.jpg); ">
+              <div class="filter-black">
+                <div class="area-populer-name">
+                  <p>Universitas Bengkulu</p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="kos.html" style="color:#fff; text-decoration: none;">
+            <div class="area-populer-img" style="background-image: url(frontend/img/baner.jpg); ">
+              <div class="filter-black">
+                <div class="area-populer-name">
+                  <p>Universitas Dehasen <br> Bengkulu</p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="kos.html" style="color:#fff; text-decoration: none;">
+            <div class="area-populer-img" style="background-image: url(frontend/img/baner.jpg); ">
+              <div class="filter-black">
+                <div class="area-populer-name">
+                  <p>Poltekes Kemenkes <br> Bengkulu</p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="kos.html" style="color:#fff; text-decoration: none;">
+            <div class="area-populer-img" style="background-image: url(frontend/img/baner.jpg); ">
+              <div class="filter-black">
+                <div class="area-populer-name">
+                  <p>IAIN Bengkulu</p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+        </div>
+        <div class="lebih-banyak">
+          <a href="kos.html">Lebih Banyak</a>
+        </div>
+    </section>
+  </main>
+  <hr>
+  <!-- footer -->
+  <footer>
+    <hr>
+    <div class="footer">
+      <div class="footer-logo">
+        <img src="frontend/img/logo.jpeg" alt="" class="img-footer">
+      </div>
+      <div class="footer-tentang-kami">
+        <h5 class="footer-tittle">Bee Kost</h5>
+        <p class="footer-item">Tentang Kami</p>
+        <p class="footer-item">Job Bee Kost</p>
+        <p class="footer-item">Pusat Bantuan</p>
+      </div>
+      <div class="hubungi-kami">
+        <h5 class="footer-tittle">Kebijakan & Privasi</h5>
+        <p class="footer-item">Kebijakan Privasi</p>
+        <p class="footer-item">Syarat dan Ketentuan Umum</p>
+      </div>
+      <div class="hubungi-kami">
+        <h5 class="footer-tittle">Hubungi Kami</h5>
+        <p><i class="fab fa-facebook-square"></i><i class="fas fa-envelope-square"></i><i class="fab fa-whatsapp"></i>
+        </p>
+        <p><i class="fab fa-instagram"></i><i class="fab fa-twitter-square"></i></p>
+      </div>
+    </div>
+    <hr style="margin-bottom: 0px;">
+
+    <p class="text-center cr"> Since 2020 at Bencoolen</p>
+  </footer>
+  <!-- footer -->
+  <script src="frontend/libraries/jquerry/jquery-3.5.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
+  <script src="frontend/libraries/bootstrap/js/bootstrap.js"></script>
+  <script src="frontend/libraries/xzoom/xzoom.min.js"></script>
+
+</body>
+
 </html>
